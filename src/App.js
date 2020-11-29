@@ -5,19 +5,19 @@ import Acesso from './acesso';
 
 function App() {
 
-  let [Status, setStatus] = useState({
-    EstaDentro: false
+  let [login, setLogin] = useState({
+    Logado: false
   });
 
   return (
     <div className="content">
      
-      {Status.EstaDentro ? 
+      {login.Logado ? 
        <div><Tamanho dica='digite seu nome'></Tamanho>
        </div> : 
        <div></div>}
 
-      <div><Acesso avisarLogin={(novoValor) => setStatus({EstaDentro: novoValor})}></Acesso></div> 
+      <div><Acesso Login={(pValor) => setLogin({Logado: pValor})}></Acesso></div> 
     </div>
   );
 }

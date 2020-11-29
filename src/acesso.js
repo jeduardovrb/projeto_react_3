@@ -14,7 +14,7 @@ const Acesso = props => {
       acesso: pAcesso
     });
 
-    props.avisarLogin(pAcesso);
+    props.Login(pAcesso);
   }
 
   return(
